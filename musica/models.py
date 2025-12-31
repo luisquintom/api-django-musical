@@ -17,7 +17,7 @@ class Cancion(models.Model):
     titulo = models.CharField(max_length=100)
     artista = models.CharField(max_length=100)
     
-    # ForeignKey: Relación Uno a Muchos (Un usuario tiene muchas canciones)
+    # ForeignKey: Relación Uno a Muchos 
     # related_name='canciones' nos permite acceder desde el usuario a sus canciones
     # on_delete=models.CASCADE significa que si borras al usuario, se borran sus canciones
     owner = models.ForeignKey(Usuario, related_name='canciones', on_delete=models.CASCADE)

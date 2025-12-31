@@ -8,7 +8,6 @@ class CancionSerializer(serializers.ModelSerializer):
         model = Cancion
         fields = ['id', 'titulo', 'artista', 'owner']
         # 'owner' será de lectura solamente en la creación anidada, 
-        # o lo gestionaremos desde la vista.
         read_only_fields = ['owner'] 
 
 # Serializer para Usuarios
