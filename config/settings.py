@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # --- AGREGAR ESTO ---
-    'rest_framework',  # Para poder crear la API
+    # -----
+    'rest_framework',  # la API
     'musica',          # Nuestra aplicación
 ]
 MIDDLEWARE = [
